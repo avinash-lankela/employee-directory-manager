@@ -1,146 +1,136 @@
-#Employee Directory Manager
+# Employee Directory Manager
 
-#Overview
+## Overview
+    This project was developed as part of a Python Collections assignment. The objective of the assignment is to demonstrate the use of Python collection data types such as     Lists, Tuples, Sets, and Dictionaries while building a simple Employee Directory Management System.
+    The program also includes user input handling and a menu-driven interface to perform basic employee management operations.
 
-This project was developed as part of a Python Collections assignment. The objective of the assignment is to demonstrate the use of Python collection data types such as Lists, Tuples, Sets, and Dictionaries while building a simple Employee Directory Management System.
-The program also includes user input handling and a menu-driven interface to perform basic employee management operations.
-##Question 1: Employee List Management (Lists)
+ # Question 1: Employee List Management (Lists)
 
-##Objective
+## Objective
+    To understand how Python Lists work and how elements can be added and removed dynamically.
+## Implementation
+    A list was created containing employee names.
 
-To understand how Python Lists work and how elements can be added and removed dynamically.
-Implementation
+## Operations performed:
+    Added a new employee using append()
+    Removed an existing employee using remove()
+    Displayed the updated employee list
+    Concepts Used
 
-A list was created containing employee names.
+## List Creation
+    append()
+    remove()
+    List Traversal
 
-#Operations performed:
+## Example
+    employees = ["Avinash", "Rahul", "Priya", "Sneha", "Kiran"]
+    employees.append("Arjun")
+    employees.remove("Rahul")
+  
+# Question 2: Department Information (Tuples)
 
-Added a new employee using append()
-Removed an existing employee using remove()
-Displayed the updated employee list
-Concepts Used
+## Objective
+    To understand the use of Tuples and how immutable collections work in Python.
 
-#List Creation
-append()
-remove()
-List Traversal
-#Example
+## Implementation
+    A tuple was created to store department names:
+    Engineering
+    Human Resources
+    Finance
+    Operations
 
-employees = ["Avinash", "Rahul", "Priya", "Sneha", "Kiran"]
-employees.append("Arjun")
-employees.remove("Rahul")
-##Question 2: Department Information (Tuples)
+## Operations performed:
+    Printed all department names
+    Accessed and printed the first department
+    Calculated the total number of departments using len()
 
-#Objective
+## Concepts Used
+    Tuple Creation
+    Tuple Indexing
+    teration using Loop
+    len() Function
 
-To understand the use of Tuples and how immutable collections work in Python.
-Implementation
+## Example
+    departments = ( "Engineering", "Human Resources", "Finance", "Operations" )
+    print(departments[0])
+    print(len(departments))
 
-A tuple was created to store department names:
+# Question 3: Employee Skills Tracking (Sets)
 
-Engineering
-Human Resources
-Finance
-Operations
+## Objective
+    To understand how Sets store unique values and automatically remove duplicates.
 
-##Operations performed:
-Printed all department names
-Accessed and printed the first department
-Calculated the total number of departments using len()
+ ## Operations performed:
+    Displayed the set
+    Observed duplicate removal
+    Added a new skill using add()
 
-##Concepts Used
-Tuple Creation
-Tuple Indexing
-teration using Loop
-len() Function
+## Concepts Used
+    Set Creation
+    Duplicate Handling
+    add() Method
+  
+  ## Example
+    skills = {"Python", "SQL", "AWS", "Python", "Spark"}
+    skills.add("Docker")
 
-##Example
-departments = ( "Engineering", "Human Resources", "Finance", "Operations" )
-print(departments[0])
-print(len(departments))
+## Observation
+    The duplicate value "Python" appears only once because sets do not allow duplicate entries.
 
-##Question 3: Employee Skills Tracking (Sets)
+# Question 4: Employee Information (Dictionary)#
 
-##Objective
-To understand how Sets store unique values and automatically remove duplicates.
+## Objective
+    To understand how Dictionaries store data using key-value pairs.
 
-##Operations performed:
-Displayed the set
-Observed duplicate removal
-Added a new skill using add()
+## Implementation
+    A dictionary was created to store employee details such as:
+    Employee ID
+    Name
+     Role
+    Experience
+    Location
 
-##Concepts Used
-Set Creation
-Duplicate Handling
-add() Method
-Example
+# Operations performed:
+    Printed all key-value pairs
+    Updated employee role
+    Added a new field called Project
 
-skills = {"Python", "SQL", "AWS", "Python", "Spark"}
-skills.add("Docker")
+# Concepts Used
+    Dictionary Creation
+    Updating Values
+    Adding New Keys
+    Dictionary Traversal
 
-#Observation
-The duplicate value "Python" appears only once because sets do not allow duplicate entries.
+# Example
+    employee_info = { "Employee ID": 101, "Name": "Avinash", "Role": "Data Analyst" }
+    employee_info["Role"] = "Senior Data Analyst"
+    employee_info["Project"] = "Employee Directory Manager"
 
-##Question 4: Employee Information (Dictionary)#
+## Question 5: User Input
 
-#Objective
-To understand how Dictionaries store data using key-value pairs.
+# Objective
+    To understand how user input can be collected and used to update existing collections.
 
-#Implementation
-A dictionary was created to store employee details such as:
-Employee ID
-Name
-Role
-Experience
-Location
+# Implementation
+    -The program accepts:
+    Employee Name 
+    Employee Skill
 
-#Operations performed:
-Printed all key-value pairs
-Updated employee role
-Added a new field called Project
+# Operations performed:
+    Added the employee name to the employee list
+    Added the employee skill to the skills set
+    Displayed the updated collections
 
-#Concepts Used
-Dictionary Creation
-Updating Values
-Adding New Keys
-Dictionary Traversal
+# Concepts Used
+    input()
+    Dynamic Data Entry
+    Updating Lists
+    Updating Sets
 
-#Example
-employee_info = { "Employee ID": 101, "Name": "Avinash", "Role": "Data Analyst" }
-employee_info["Role"] = "Senior Data Analyst"
-employee_info["Project"] = "Employee Directory Manager"
-
-##Question 5: User Input
-
-#Objective
-
-To understand how user input can be collected and used to update existing collections.
-Implementation
-
--The program accepts:
-
-Employee Name
-
-Employee Skill
-
-#Operations performed:
-Added the employee name to the employee list
-Added the employee skill to the skills set
-Displayed the updated collections
-
-#Concepts Used
-input()
-Dynamic Data Entry
-Updating Lists
-Updating Sets
-
-#Example
-emp_name = input("Enter Employee Name: ")
-
-emp_skill = input("Enter Employee Skill: ")
-
-employees.append(emp_name)
-
-skills.add(emp_skill)
+# Example
+    emp_name = input("Enter Employee Name: ")
+    emp_skill = input("Enter Employee Skill: ")
+    employees.append(emp_name)
+    skills.add(emp_skill)
 
 
