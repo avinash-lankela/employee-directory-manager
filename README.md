@@ -90,44 +90,44 @@
     Experience
     Location
 
-# Operations performed:
+## Operations performed:
     Printed all key-value pairs
     Updated employee role
     Added a new field called Project
 
-# Concepts Used
+## Concepts Used
     Dictionary Creation
     Updating Values
     Adding New Keys
     Dictionary Traversal
 
-# Example
+## Example
     employee_info = { "Employee ID": 101, "Name": "Avinash", "Role": "Data Analyst" }
     employee_info["Role"] = "Senior Data Analyst"
     employee_info["Project"] = "Employee Directory Manager"
 
 ## Question 5: User Input
 
-# Objective
+## Objective
     To understand how user input can be collected and used to update existing collections.
 
-# Implementation
+## Implementation
     The program accepts:
     Employee Name 
     Employee Skill
 
-# Operations performed:
+## Operations performed:
     Added the employee name to the employee list
     Added the employee skill to the skills set
     Displayed the updated collections
 
-# Concepts Used
+## Concepts Used
     input()
     Dynamic Data Entry
     Updating Lists
     Updating Sets
 
-# Example
+## Example
     emp_name = input("Enter Employee Name: ")
     emp_skill = input("Enter Employee Skill: ")
     employees.append(emp_name)
