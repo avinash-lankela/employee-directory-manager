@@ -86,7 +86,7 @@
     A dictionary was created to store employee details such as:
     Employee ID
     Name
-     Role
+    Role
     Experience
     Location
 
@@ -112,7 +112,7 @@
     To understand how user input can be collected and used to update existing collections.
 
 # Implementation
-    -The program accepts:
+    The program accepts:
     Employee Name 
     Employee Skill
 
